@@ -1,7 +1,7 @@
 # Sasidhar Mopuru
 
-Hi, I'm **Sasidhar Mopuru**, a data engineer focused on building scalable
-streaming and lakehouse systems.
+Hi, I'm **Sasidhar Mopuru**, a Data & AI Platform Engineer focused on building scalable
+streaming, lakehouse, and AI-ready data systems.
 
 ## Featured Project
 
@@ -21,6 +21,8 @@ streaming and lakehouse systems.
 ## Get in Touch
 
 - GitHub: https://github.com/Sasireddy001
+- Portfolio: https://sasireddy001.github.io/Portfolio
+- Resume: https://sasireddy001.github.io/Portfolio/SASIDHAR_RESUME.pdf
 - Email: sasidharmopuru@gmail.com
 
 Copy this content into a `README.md` inside a repository named
