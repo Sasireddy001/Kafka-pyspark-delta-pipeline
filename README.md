@@ -79,6 +79,7 @@ discussion and Databricks deployment notes.
 
 ## Deployment Targets
 
+- **Docker:** `docker-compose up -d` starts a local Kafka + Zookeeper broker. Use `localhost:9092` and copy `.env.example` to `.env`.
 - **Databricks:** Attach the project to a cluster and run `python -m pipeline.streaming_job`.
 - **Local Spark:** Install dependencies, start a Kafka broker, and run the same module.
 - **CI/CD:** Every push runs linting and tests on Python 3.10/3.11 via GitHub Actions.
@@ -144,7 +145,17 @@ make test
 pytest
 ```
 
-### 3. Generate Sample Data
+### 3. Start Kafka with Docker (optional)
+
+If you don't have a local Kafka broker, start one with Docker Compose:
+
+```bash
+docker-compose up -d
+```
+
+Then use `localhost:9092` as the bootstrap server. Copy `.env.example` to `.env` and edit values as needed.
+
+### 4. Generate Sample Data
 
 To a JSONL file (no Kafka needed):
 
@@ -158,7 +169,7 @@ To a Kafka topic:
 python scripts/generate_sample_data.py --bootstrap localhost:9092 --topic events --count 10000 --rate 100
 ```
 
-### 4. Run the Streaming Job
+### 5. Run the Streaming Job
 
 Local (requires a running Kafka broker):
 
@@ -172,7 +183,7 @@ On Databricks, attach the project to a cluster and run:
 python -m pipeline.streaming_job
 ```
 
-Use environment variables to override defaults:
+Use environment variables to override defaults. See `.env.example` for all available options.
 
 ```bash
 export KAFKA_BOOTSTRAP_SERVERS=localhost:9092
