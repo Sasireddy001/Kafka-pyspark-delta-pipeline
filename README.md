@@ -1,6 +1,6 @@
 # kafka-pyspark-delta-pipeline
 
-![CI](https://github.com/Sasireddy001/kafka-pyspark-delta-pipeline/actions/workflows/ci.yml/badge.svg)
+![CI](https://github.com/Sasireddy001/Kafka-pyspark-delta-pipeline/actions/workflows/ci.yml/badge.svg)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
 A production-style streaming data pipeline that ingests JSON events from **Apache

@@ -36,9 +36,9 @@ dev = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/Sasireddy001/kafka-pyspark-delta-pipeline"
-Repository = "https://github.com/Sasireddy001/kafka-pyspark-delta-pipeline"
-Issues = "https://github.com/Sasireddy001/kafka-pyspark-delta-pipeline/issues"
+Homepage = "https://github.com/Sasireddy001/Kafka-pyspark-delta-pipeline"
+Repository = "https://github.com/Sasireddy001/Kafka-pyspark-delta-pipeline"
+Issues = "https://github.com/Sasireddy001/Kafka-pyspark-delta-pipeline/issues"
 
 [tool.setuptools.packages.find]
 where = ["src"]
