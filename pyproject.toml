@@ -5,7 +5,7 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "kafka-pyspark-delta-pipeline"
 version = "0.1.0"
-description = "Production-style streaming pipeline: Kafka -> PySpark -> Delta Lake on Databricks"
+description = "Production-Style Kafka PySpark Delta Pipeline — streaming data pipeline from Kafka to Delta Lake on Databricks"
 readme = "README.md"
 license = {text = "MIT"}
 requires-python = ">=3.10"

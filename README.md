@@ -1,4 +1,4 @@
-# kafka-pyspark-delta-pipeline
+# Production-Style Kafka PySpark Delta Pipeline
 
 ![CI](https://github.com/Sasireddy001/Kafka-pyspark-delta-pipeline/actions/workflows/ci.yml/badge.svg)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)

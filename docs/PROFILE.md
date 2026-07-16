@@ -5,7 +5,7 @@ streaming and lakehouse systems.
 
 ## Featured Project
 
-- **kafka-pyspark-delta-pipeline** — Production-style data pipeline demonstrating
+- **Production-Style Kafka PySpark Delta Pipeline** — Production-style data pipeline demonstrating
   Apache Kafka ingestion, PySpark Structured Streaming transformations, and
   Delta Lake storage on Databricks. Includes automated tests, GitHub Actions CI,
   and a performance benchmark.
