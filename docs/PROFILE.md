@@ -23,6 +23,7 @@ streaming, lakehouse, and AI-ready data systems.
 - GitHub: https://github.com/Sasireddy001
 - Portfolio: https://sasireddy001.github.io/Portfolio
 - Resume: https://sasireddy001.github.io/Portfolio/SASIDHAR_RESUME.pdf
+- LinkedIn: https://www.linkedin.com/in/sasidhar-mopuru-417a03233
 - Email: sasidharmopuru@gmail.com
 
 Copy this content into a `README.md` inside a repository named
