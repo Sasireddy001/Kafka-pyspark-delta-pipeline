@@ -277,6 +277,10 @@ Add these to a `docs/images/` or repository `README` gallery to maximize recruit
 - LinkedIn: [linkedin.com/in/sasidhar-mopuru-417a03233](https://www.linkedin.com/in/sasidhar-mopuru-417a03233)
 - Email: sasidharmopuru@gmail.com
 
+**Certifications:**
+- DP-700: Implementing Data Engineering Solutions using Microsoft Fabric – Microsoft
+- Databricks Certified Data Engineer Associate – Databricks
+
 I specialize in building scalable data and AI platforms with Apache Spark, Delta Lake,
 Kafka, and Databricks.
 
