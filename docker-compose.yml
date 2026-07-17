@@ -23,3 +23,20 @@ services:
       KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: PLAINTEXT:PLAINTEXT
       KAFKA_INTER_BROKER_LISTENER_NAME: PLAINTEXT
       KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
+
+  streaming-job:
+    build: .
+    container_name: kafka-streaming-job
+    depends_on:
+      - kafka
+    volumes:
+      - ./data:/app/data
+    environment:
+      - KAFKA_BOOTSTRAP_SERVERS=kafka:9092
+      - KAFKA_TOPIC=events
+      - DELTA_PATH=/app/data/delta/events
+      - CHECKPOINT_PATH=/app/data/delta/checkpoints/events
+      - TRIGGER_INTERVAL=10 seconds
+      - MAX_OFFSETS_PER_TRIGGER=10000
+      - WATERMARK_SECONDS=120
+      - WINDOW_SECONDS=60

@@ -150,10 +150,31 @@ pytest
 If you don't have a local Kafka broker, start one with Docker Compose:
 
 ```bash
-docker-compose up -d
+docker-compose up -d kafka zookeeper
 ```
 
 Then use `localhost:9092` as the bootstrap server. Copy `.env.example` to `.env` and edit values as needed.
+
+### 3.1. Run the Full Stack with Docker Compose (recommended)
+
+To run Kafka, Zookeeper, and the streaming job together:
+
+```bash
+docker-compose up -d
+```
+
+This starts:
+- Zookeeper (port 2181)
+- Kafka (port 9092)
+- Streaming job (automatically connects to Kafka)
+
+The streaming job will read from the `events` topic and write to `/app/data/delta/events`.
+
+To generate sample data and send it to Kafka:
+
+```bash
+docker-compose exec streaming-job python scripts/generate_sample_data.py --bootstrap kafka:9092 --topic events --count 10000 --rate 100
+```
 
 ### 4. Generate Sample Data
 
