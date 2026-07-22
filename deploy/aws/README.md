@@ -110,12 +110,20 @@ flowchart TB
 
 ## CI/CD
 
-The `.github/workflows/aws-deploy.yml` workflow runs:
+The `.github/workflows/aws-deploy.yml` workflow is split into two paths:
 
-1. `terraform fmt -check`
-2. `terraform validate`
-3. `terraform plan` on pull requests
-4. `terraform apply` on `main` (requires approval for production)
+| Trigger | What it runs |
+|---|---|
+| `push` / `pull_request` to `deploy/aws/**` or `src/pipeline/**` | `terraform fmt -check` and `terraform validate` only (no AWS credentials needed). |
+| `workflow_dispatch` (manual) with `apply: true` | Full `terraform plan` and `terraform apply`, then uploads the streaming job to S3. |
+
+To deploy, first add the following GitHub repository secrets:
+
+- `AWS_ACCESS_KEY_ID`
+- `AWS_SECRET_ACCESS_KEY`
+- `AWS_REGION` (defaults to `us-east-1` if omitted)
+
+Then run the workflow from **Actions → AWS Deploy → Run workflow** in the GitHub UI.
 
 ## Cost Considerations
 
