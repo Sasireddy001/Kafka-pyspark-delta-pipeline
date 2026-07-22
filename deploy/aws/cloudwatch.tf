@@ -59,7 +59,7 @@ resource "aws_cloudwatch_metric_alarm" "msk_consumer_lag" {
   threshold           = 1000
   alarm_description   = "High consumer lag on the Kafka topic"
   dimensions = {
-    "Cluster Name" = aws_msk_serverless_cluster.kafka.cluster_name
+    "Cluster Name" = "${var.project_name}-${var.environment}"
   }
   alarm_actions = [aws_sns_topic.alerts.arn]
 

@@ -10,7 +10,7 @@ output "s3_bucket" {
 
 output "msk_cluster_name" {
   description = "MSK serverless cluster name"
-  value       = aws_msk_serverless_cluster.kafka.cluster_name
+  value       = "${var.project_name}-${var.environment}"
 }
 
 output "msk_bootstrap_brokers" {
