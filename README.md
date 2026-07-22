@@ -256,6 +256,8 @@ Example results on a single-node laptop with 4 cores:
 | 100k | ~3.2 s   | ~31 k rows/s |
 | 1M   | ~22 s    | ~45 k rows/s |
 
+![Benchmark](docs/assets/benchmark-chart.svg)
+
 See [`docs/benchmark.md`](docs/benchmark.md) for more details.
 
 ## Screenshots & Demo Recommendations

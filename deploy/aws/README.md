@@ -125,12 +125,22 @@ To deploy, first add the following GitHub repository secrets:
 
 Then run the workflow from **Actions → AWS Deploy → Run workflow** in the GitHub UI.
 
+## Monitoring
+
+CloudWatch dashboards and alarms are provisioned as part of the Terraform stack. See [`MONITORING.md`](MONITORING.md) for the full monitoring guide, alarm thresholds, and runbook.
+
+Also review [`COST_ESTIMATE.md`](COST_ESTIMATE.md) for a dev/prod cost breakdown and [`PRODUCTION_CHECKLIST.md`](PRODUCTION_CHECKLIST.md) for go-live readiness.
+
 ## Cost Considerations
 
 - MSK Serverless bills per GB-hour and partition-hour.
 - EMR Serverless bills per worker-hour; use auto-stop and scheduled job runs to minimize cost.
 - S3 charges for storage and requests; set lifecycle policies to archive old checkpoints.
 - Use `terraform destroy` to clean up dev resources when not in use.
+
+## Production Checklist
+
+Before promoting this stack to production, complete the items in [`PRODUCTION_CHECKLIST.md`](PRODUCTION_CHECKLIST.md). It covers infrastructure, Kafka/MSK, EMR Serverless, data quality, monitoring, security, cost, and operations.
 
 ## Security
 

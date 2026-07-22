@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" width="640" height="360" role="img" aria-label="Kafka to PySpark to Delta throughput benchmark">
+  <defs>
+    <linearGradient id="barGradient" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#2563eb"/>
+    </linearGradient>
+    <linearGradient id="barGradient2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#34d399"/>
+      <stop offset="100%" stop-color="#059669"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="640" height="360" fill="#0f172a" rx="8"/>
+
+  <!-- Title -->
+  <text x="320" y="34" fill="#f8fafc" font-size="18" font-weight="600" text-anchor="middle" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif">
+    Kafka → PySpark → Delta Throughput
+  </text>
+  <text x="320" y="58" fill="#94a3b8" font-size="13" text-anchor="middle" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif">
+    Single-node laptop, 4 cores, SSD
+  </text>
+
+  <!-- Axes -->
+  <line x1="72" y1="280" x2="600" y2="280" stroke="#334155" stroke-width="1.5"/>
+  <line x1="72" y1="280" x2="72" y2="85" stroke="#334155" stroke-width="1.5"/>
+
+  <!-- Y-axis labels -->
+  <text x="62" y="285" fill="#94a3b8" font-size="11" text-anchor="end" font-family="system-ui, sans-serif">0</text>
+  <text x="62" y="221" fill="#94a3b8" font-size="11" text-anchor="end" font-family="system-ui, sans-serif">15k</text>
+  <text x="62" y="158" fill="#94a3b8" font-size="11" text-anchor="end" font-family="system-ui, sans-serif">30k</text>
+  <text x="62" y="95"  fill="#94a3b8" font-size="11" text-anchor="end" font-family="system-ui, sans-serif">45k</text>
+
+  <!-- Gridlines -->
+  <line x1="72" y1="219" x2="600" y2="219" stroke="#334155" stroke-width="0.5" opacity="0.4"/>
+  <line x1="72" y1="156" x2="600" y2="156" stroke="#334155" stroke-width="0.5" opacity="0.4"/>
+  <line x1="72" y1="93"  x2="600" y2="93"  stroke="#334155" stroke-width="0.5" opacity="0.4"/>
+
+  <!-- Bar 1: 100k rows, ~31k rows/s -->
+  <rect x="120" y="173" width="120" height="107" fill="url(#barGradient)" rx="4"/>
+  <text x="180" y="253" fill="#f8fafc" font-size="13" font-weight="600" text-anchor="middle" font-family="system-ui, sans-serif">100k rows</text>
+  <text x="180" y="158" fill="#f8fafc" font-size="14" font-weight="700" text-anchor="middle" font-family="system-ui, sans-serif">31k</text>
+  <text x="180" y="142" fill="#38bdf8" font-size="12" text-anchor="middle" font-family="system-ui, sans-serif">rows/s</text>
+  <text x="180" y="271" fill="#94a3b8" font-size="12" text-anchor="middle" font-family="system-ui, sans-serif">~3.2 s</text>
+
+  <!-- Bar 2: 1M rows, ~45k rows/s -->
+  <rect x="400" y="92" width="120" height="188" fill="url(#barGradient2)" rx="4"/>
+  <text x="460" y="253" fill="#f8fafc" font-size="13" font-weight="600" text-anchor="middle" font-family="system-ui, sans-serif">1M rows</text>
+  <text x="460" y="77" fill="#f8fafc" font-size="14" font-weight="700" text-anchor="middle" font-family="system-ui, sans-serif">45k</text>
+  <text x="460" y="61" fill="#34d399" font-size="12" text-anchor="middle" font-family="system-ui, sans-serif">rows/s</text>
+  <text x="460" y="271" fill="#94a3b8" font-size="12" text-anchor="middle" font-family="system-ui, sans-serif">~22 s</text>
+
+  <!-- X-axis label -->
+  <text x="320" y="315" fill="#94a3b8" font-size="13" text-anchor="middle" font-family="system-ui, sans-serif">Dataset size</text>
+
+  <!-- Y-axis label -->
+  <text x="24" y="183" fill="#94a3b8" font-size="13" text-anchor="middle" transform="rotate(-90 24 183)" font-family="system-ui, sans-serif">Throughput (rows / second)</text>
+
+  <!-- Source -->
+  <text x="612" y="346" fill="#64748b" font-size="11" text-anchor="end" font-family="system-ui, sans-serif">Source: Kafka-pyspark-delta-pipeline benchmark</text>
+</svg>

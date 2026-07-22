@@ -27,3 +27,9 @@ variable "emr_release_label" {
   type        = string
   default     = "emr-7.0.0-latest"
 }
+
+variable "alert_email" {
+  description = "Email address for CloudWatch alarm notifications (optional)"
+  type        = string
+  default     = ""
+}

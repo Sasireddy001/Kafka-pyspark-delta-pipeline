@@ -28,3 +28,13 @@ output "emr_execution_role_arn" {
   description = "IAM role ARN for EMR Serverless job runs"
   value       = aws_iam_role.emr_execution.arn
 }
+
+output "sns_topic_arn" {
+  description = "SNS topic ARN for CloudWatch alarm notifications"
+  value       = aws_sns_topic.alerts.arn
+}
+
+output "cloudwatch_log_group" {
+  description = "CloudWatch log group for the streaming job"
+  value       = aws_cloudwatch_log_group.streaming.name
+}
