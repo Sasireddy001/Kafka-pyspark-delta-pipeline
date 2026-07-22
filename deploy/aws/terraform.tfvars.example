@@ -1,0 +1,9 @@
+# Copy this file to terraform.tfvars and fill in real values before running terraform plan/apply.
+
+aws_region  = "us-east-1"
+environment = "dev"
+
+# Optional overrides
+# project_name      = "kafka-pyspark-delta"
+# vpc_cidr          = "10.0.0.0/16"
+# emr_release_label = "emr-7.0.0-latest"

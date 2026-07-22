@@ -8,6 +8,9 @@
 [![Delta Lake](https://img.shields.io/badge/Delta%20Lake-00ADD8?logo=delta&logoColor=white)](https://delta.io)
 [![GitHub Actions](https://img.shields.io/badge/GitHub%20Actions-2088FF?logo=githubactions&logoColor=white)](https://github.com/features/actions)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![AWS Deploy](https://img.shields.io/badge/AWS%20Deploy-FF9900?logo=amazonaws&logoColor=white)](deploy/aws)
+[![Architecture](https://img.shields.io/badge/Architecture-2563EB)](ARCHITECTURE.md)
+[![System Design](https://img.shields.io/badge/System%20Design-06B6D4)](SYSTEM_DESIGN.md)
 
 A production-style streaming data pipeline that ingests JSON events from **Apache
 Kafka**, transforms them with **PySpark Structured Streaming**, and writes the
