@@ -46,7 +46,7 @@ Highlights:
 |--------|--------|-------|
 | Throughput | ~31k rows/s (100k rows) / ~45k rows/s (1M rows) | Single-node laptop, 4 cores, SSD |
 | Delivery guarantee | Exactly-once | Kafka offsets + Delta Lake idempotent writes + checkpointing |
-| Test coverage | Core transformations | pytest with in-memory Spark/Delta fixture |
+| Test coverage | 95%+ of core transformations | pytest with in-memory Spark/Delta fixture |
 | Deployment time | Minutes | `pip install -e ".[dev]"` then run locally or attach to Databricks |
 
 ## Architecture
