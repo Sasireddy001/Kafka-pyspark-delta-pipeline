@@ -14,7 +14,7 @@
 - **Latency:** Sub-minute micro-batch latency in production.
 - **Throughput:** Sustain ≥ 30,000 rows/sec on modest hardware.
 - **Reliability:** 99.5% uptime; recover without data loss or duplication.
-- **Testability:** ≥ 90% unit test coverage on transformation logic.
+- **Testability:** ≥ 95% unit test coverage on transformation logic.
 - **Portability:** Same code base runs locally, on Databricks, and on K8s.
 
 ---

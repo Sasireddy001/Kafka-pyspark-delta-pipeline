@@ -278,7 +278,7 @@ Add these to a `docs/images/` or repository `README` gallery to maximize recruit
 
 - **Sasidhar Mopuru** — Data & AI Platform Engineer
 - GitHub: [@Sasireddy001](https://github.com/Sasireddy001)
-- Portfolio: [sasireddy001.github.io/Portfolio](https://sasireddy001.github.io/Portfolio)
+- Portfolio: [sasireddy001.github.io/Portfolio](https://sasireddy001.github.io/Portfolio/)
 - LinkedIn: [linkedin.com/in/sasidhar-mopuru-417a03233](https://www.linkedin.com/in/sasidhar-mopuru-417a03233)
 - Email: sasidharmopuru@gmail.com
 
